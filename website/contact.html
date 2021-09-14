@@ -14,9 +14,9 @@
     <title>The YAY Company</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-secondary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">The YAY Company</a>
+        <a class="navbar-brand text-primary" href="index.html">The YAY Company</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -38,7 +38,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="contact.html"
+              <a class="nav-link active bg-white" aria-current="page" href="contact.html"
                 >Contact</a
               >
             </li>
@@ -47,12 +47,11 @@
             <input
               class="form-control me-2"
               type="search"
-              placeholder="Search"
+              
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
+            <button class="btn bg-primary text-white" type="submit">Go</button>
+          </form>
           </form>
         </div>
       </div>
@@ -92,21 +91,21 @@
                 type="name"
                 class="form-control"
                 id="exampleFormControlInput1"
-                placeholder="Name"
+               
               />
             </div>
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label"
-                >Email address</label
+                >Email</label
               >
               <input
                 type="email"
                 class="form-control"
                 id="exampleFormControlInput1"
-                placeholder="name@example.com"
+             
               />
             </div>
-            <label for="basic-url" class="form-label">Your vanity URL</label>
+            <label for="basic-url" class="form-label">Website</label>
             <div class="input-group mb-3">
               <span class="input-group-text" id="basic-addon3">https://</span>
               <input
@@ -118,7 +117,7 @@
             </div>
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label"
-                >Example textarea</label
+                >Message</label
               >
               <textarea
                 class="form-control"
@@ -128,20 +127,21 @@
               <div class="mb-3 form-check">
                 <input
                   type="checkbox"
-                  class="form-check-input"
+                  class="form-check-input bg-primary"
                   id="exampleCheck1"
                 />
                 <label class="form-check-label" for="exampleCheck1"
-                  >Check me out</label
+                  >Allow us to sell your personal details to whomever we want</label
                 >
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
+              <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary bg-dark">Submit</button>
+            </div></div>
           </div>
         </div>
       </div>
     </div>
-    <footer class="fixed-bottom">
+    <footer class="navbar-expand-lg bg-light">
       <div>
         <i class="fa fa-vimeo" aria-hidden="true"></i
         ><i class="fa fa-youtube-play" aria-hidden="true"></i>
