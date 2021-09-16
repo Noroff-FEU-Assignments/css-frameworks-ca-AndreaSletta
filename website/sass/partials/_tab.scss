@@ -1,0 +1,14 @@
+.tab-content {
+  .nav-tabs {
+    border-bottom: none;
+    .nav-item .nav-link {
+      border: none;
+    }
+  }
+  .tab-content .tab-pane .card {
+    border: none;
+    .row .col-md-8 .card-body {
+      padding-top: 0;
+    }
+  }
+}

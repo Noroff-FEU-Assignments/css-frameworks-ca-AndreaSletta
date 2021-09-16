@@ -1,0 +1,14 @@
+.container .accordion .accordion-item {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+
+  h2 button {
+    color: $primary;
+  }
+
+  .accordion-collapse .accordion-body .container .row .col-auto {
+    p {
+      margin-top: 1rem;
+    }
+  }
+}

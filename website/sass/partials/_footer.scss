@@ -1,0 +1,43 @@
+footer {
+  height: 165px;
+  padding: 0 5%;
+
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    .row {
+      height: 80%;
+      margin: auto;
+      .col-12,
+      .col-6 {
+        display: flex;
+        justify-content: center;
+        color: #767676;
+        a {
+          color: #767676;
+          text-decoration: none;
+        }
+        i {
+          margin: 0 7px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 767.98px) {
+  footer {
+    height: 53px;
+    .container .row {
+      width: 100%;
+      .col-12 {
+        display: block;
+      }
+      .col-6:last-of-type {
+        display: block;
+        text-align: right;
+      }
+    }
+  }
+}

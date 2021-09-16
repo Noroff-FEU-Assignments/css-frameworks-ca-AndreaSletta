@@ -1,0 +1,28 @@
+.carousel {
+  @media screen and (max-width: 767.98px) {
+    .carousel-inner .carousel-item {
+      height: 287px;
+    }
+  }
+
+  .carousel-inner .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .carousel-indicators {
+    button {
+      height: 30px;
+      width: 30px;
+      opacity: 100%;
+      transition: background-color 0.3s ease;
+      border: none;
+      border-radius: 2px;
+      margin: 0 10px;
+    }
+    .active {
+      background-color: $primary;
+    }
+  }
+}
