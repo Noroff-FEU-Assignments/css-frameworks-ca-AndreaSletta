@@ -42,7 +42,7 @@ body {
           box-shadow: 0 0 0 0;
 }
 
-@media screen and (min-width: 767.98px) {
+@media screen and (min-width: 991.98px) {
   .navbar .container-fluid .collapse .navbar-nav .nav-item .active, .navbar .container-sm .collapse .navbar-nav .nav-item .active, .navbar .container-md .collapse .navbar-nav .nav-item .active, .navbar .container-lg .collapse .navbar-nav .nav-item .active, .navbar .container-xl .collapse .navbar-nav .nav-item .active, .navbar .container-xxl .collapse .navbar-nav .nav-item .active {
     border-radius: 3px;
   }
@@ -155,12 +155,17 @@ footer .container .row .col-6 i {
   border-bottom: none;
 }
 
+.tab-content .nav-tabs .nav-item {
+  margin-bottom: -0.75px;
+  z-index: 300;
+}
+
 .tab-content .nav-tabs .nav-item .nav-link {
-  border: none;
+  border-bottom: none;
 }
 
 .tab-content .tab-content .tab-pane .card {
-  border: none;
+  border-radius: 0 0.25rem 0.25rem 0.25rem;
 }
 
 .tab-content .tab-content .tab-pane .card .row .col-md-8 .card-body {
@@ -169,6 +174,34 @@ footer .container .row .col-6 i {
 
 .pagination .page-item .page-link {
   border: 1px solid #e92569;
+}
+
+@media screen and (max-width: 767.98px) {
+  #basic-url {
+    border-radius: 0.25rem;
+  }
+  .container .row .order-md-2 {
+    margin-top: -1rem;
+  }
+  .container .row .order-md-1 .col {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+}
+
+@media screen and (min-width: 767.98px) {
+  .container .row .order-md-2 {
+    padding-left: 60px;
+    padding-top: 4rem;
+  }
+}
+
+.container .row .order-md-2 .col-11 {
+  padding-left: 30px;
+}
+
+#basic-addon3 {
+  background-color: #c7c7c7;
 }
 
 :root {

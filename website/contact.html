@@ -13,9 +13,11 @@
     <title>The YAY Company</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-secondary">
-      <div class="container-fluid">
-        <a class="navbar-brand text-primary" href="index.html">The YAY Company</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
+      <div class="container-fluid px-2">
+        <a class="navbar-brand text-primary px-3" href="index.html"
+          >The YAY Company</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -30,112 +32,155 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a
+                class="nav-link px-4 py-3"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="news.html">News</a>
+              <a class="nav-link px-4 py-3" href="news.html">News</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active bg-white" aria-current="page" href="contact.html"
+              <a class="nav-link active bg-white px-4 py-3" href="contact.html"
                 >Contact</a
               >
             </li>
           </ul>
-          <form class="d-flex">
+          <form class="d-flex px-3 py-3">
             <input
-              class="form-control me-2"
+              class="form-control"
               type="search"
-              
+              placeholder="Search"
               aria-label="Search"
             />
             <button class="btn bg-primary text-white" type="submit">Go</button>
-          </form>
           </form>
         </div>
       </div>
     </nav>
 
-    <div class="container mt-5">
-      <h1>Submit your details</h1>
-      <div class="container">
-        <div class="row row-cols-1 row-cols-md-2">
-          <div class="col order-md-2">
-            <div class="">
-              <i class="fa fa-envelope-o" aria-hidden="true"></i>
-              <a href="mailto:hello@yay.com">hello@yay.com</a>
-            </div>
-
-            <div class="">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-
-              <a href="tel:123 456 7890">123 456 7890</a>
-            </div>
-
-            <div class="">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <p>
-                123 Some Street Somewhere <br />
-                Some City <br />
-                10000
-              </p>
-            </div>
+    <div class="container mt-4 py-5 px-4">
+      <div class="row row-cols-1 row-cols-md-2 py-3 mt-4">
+        <div class="col order-md-2 pb-4">
+          <div class="row py-3">
+            <i
+              class="fa fa-envelope fa-lg col-1 text-muted"
+              aria-hidden="true"
+            ></i>
+            <a
+              class="text-muted text-decoration-none col-11"
+              href="mailto:hello@yay.com"
+              >hello@yay.com</a
+            >
           </div>
-          <div class="col order-md-1">
+
+          <div class="row py-3">
+            <i
+              class="fa fa-phone fa-lg col-1 text-muted"
+              aria-hidden="true"
+            ></i>
+
+            <a
+              class="text-muted text-decoration-none col-11"
+              href="tel:123 456 7890"
+              >123 456 7890</a
+            >
+          </div>
+
+          <div class="row py-3">
+            <i
+              class="fa fa-map-marker fa-lg col-1 text-muted"
+              aria-hidden="true"
+            ></i>
+            <a class="text-muted text-decoration-none col-11">
+              123 Some Street <br />
+              Somewhere <br />
+              Some City <br />
+              10000
+            </a>
+          </div>
+        </div>
+        <div class="order-md-1">
+          <h1 class="text-primary pb-3">Submit your details</h1>
+          <div class="col p-3 shadow">
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"
+              <label
+                for="exampleFormControlInput1"
+                class="form-label text-muted"
                 >Name</label
               >
               <input
                 type="name"
-                class="form-control"
+                class="form-control border-0 shadow-sm"
                 id="exampleFormControlInput1"
-               
               />
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"
+              <label
+                for="exampleFormControlInput1"
+                class="form-label text-muted"
                 >Email</label
               >
               <input
                 type="email"
-                class="form-control"
+                class="form-control border-0 shadow-sm"
                 id="exampleFormControlInput1"
-             
               />
             </div>
-            <label for="basic-url" class="form-label">Website</label>
+            <label for="basic-url" class="form-label text-muted">Website</label>
             <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon3">https://</span>
+              <span
+                class="
+                  input-group-text
+                  text-white
+                  d-none d-md-block
+                  border-0
+                  shadow-sm
+                "
+                id="basic-addon3"
+                >https://</span
+              >
               <input
                 type="text"
-                class="form-control"
+                class="form-control border-0 shadow-sm"
                 id="basic-url"
                 aria-describedby="basic-addon3"
               />
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label"
+              <label
+                for="exampleFormControlTextarea1"
+                class="form-label text-muted"
                 >Message</label
               >
               <textarea
-                class="form-control"
+                class="form-control border-0 shadow-sm"
                 id="exampleFormControlTextarea1"
                 rows="3"
               ></textarea>
-              <div class="mb-3 form-check">
+              <div class="my-3 form-check">
                 <input
                   type="checkbox"
-                  class="form-check-input bg-primary"
+                  class="form-check-input bg-primary border-0"
                   id="exampleCheck1"
                 />
-                <label class="form-check-label" for="exampleCheck1"
-                  >Allow us to sell your personal details to whomever we want</label
+                <label class="form-check-label text-muted" for="exampleCheck1"
+                  >Allow us to sell your personal details to whomever we
+                  want</label
                 >
               </div>
               <div class="d-grid gap-2">
-              <button type="submit" class="btn btn-primary bg-dark">Submit</button>
-            </div></div>
+                <button
+                  type="submit"
+                  class="btn btn-primary bg-dark text-white border-0"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
